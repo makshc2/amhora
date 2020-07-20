@@ -1,0 +1,35 @@
+.statistic-page{
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+.statistic-content{
+  width: 890px;
+  margin: 60px auto 0 auto;
+}
+
+.statistic-block-header{
+  margin-bottom: 40px;
+}
+
+.statistic-block-header__main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.statistic-block-header__hint{
+  font-size: 13px;
+  color: #4a4a4a40;
+  text-align: right;
+  line-height: 18px;
+}
+
+.statistic-block-header__title{
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: -0.49px;
+  color: #41464a;
+}

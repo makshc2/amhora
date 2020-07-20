@@ -1,0 +1,21 @@
+export const fiat = state => state.fiat
+export const language = state => state.language
+export const crypto = state => state.crypto
+export const filters = state => state.filters
+export const rate = state => state.rate
+export const error = state => state.error
+export const navigationButtons = state => state.navigationButtons
+export const currencyButtons = state => state.currencyButtons
+  .filter(item => item.name !== 'XRP')
+export const marcet = state => state.marcet
+export const fiats = state => state.fiats
+export const lastExchangeResponse = state => state.lastExchangeResponse
+export const infoForMarket = state => state.infoForMarket
+export const footer = state => state.footer
+export const rates = state => state.rates
+export const tempTransaction = state => state.tempTransaction
+export const tempAddress = state => state.tempAddress
+export const globalMarketInfo = state => state.infoForMarket.global
+export const disableCryptoFiatPair = state => state.disableCryptoFiatPair
+export const statisticActiveDate = state => state.statisticActiveDate
+export const getCentrifugeConnection = state => state.centrifugeConnection

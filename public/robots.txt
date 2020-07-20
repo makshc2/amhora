@@ -1,0 +1,9 @@
+User-agent: *
+disallow: /btc/transaction
+disallow: /bch/transaction
+disallow: /btc/transaction
+disallow: /dsh/transaction
+disallow: /xmr/transaction
+disallow: /eth/transaction
+disallow: /ltc/transaction
+Sitemap: https://amhora.com/sitemap.xml

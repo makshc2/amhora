@@ -1,0 +1,23 @@
+.vue-tooltip{
+  text-align: center;
+  background-color:#fff;
+  color: #41464a;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.09);
+  &.tx-hash{
+    left: -200px !important;
+    max-width: 550px;
+  }
+  &.tx-from{
+    left: -100px !important;
+    max-width: 550px;
+  }
+  &.tx-to{
+    left: -50px !important;
+    max-width: 550px;
+  }
+}
+.tooltip-arrow{
+  border-color:#fff!important;
+ }

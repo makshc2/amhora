@@ -1,0 +1,240 @@
+.transaction-info {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.transaction-gray-header-text a {
+  color: #2e2637;
+}
+
+.transaction-gray-header-text a:hover {
+  text-decoration: underline !important;
+}
+
+.transaction-gray-header,
+.all-transactions .transaction-green-header {
+  background-color: #e1e1e1;
+  border: 1px solid #949494;
+}
+
+.transaction-gray-body,
+.all-transactions .transaction-green-body {
+  background-color: #d6d6d6;
+  border: 1px solid #949494;
+}
+
+.transaction-gray-header-text,
+.all-transactions .transaction-gray-header-text {
+  color: #545454;
+}
+
+.transaction-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 3px;
+  line-height: 1;
+}
+
+.transaction-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-main-info{
+  display: flex;
+  width: 100%;
+  padding: 32px 0;
+
+  &.transaction-main-info_error{
+    min-height: 66px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.transaction-main-info.block-details-bitcoin-family {
+  .transaction-main-info__block {
+    &:nth-child(1) {
+      width: 20%;
+    }
+    &:nth-child(2){
+      width: 30%;
+    }
+    &:nth-child(3) {
+      width: 50%;
+    }
+  }
+}
+.transaction-main-info__block{
+  padding: 0 30px;
+  width: 100%;
+  &:nth-child(2){
+    border-left: 1px solid  #97979740;
+    border-right: 1px solid  #97979740;
+  }
+  &:last-child{
+    border-right: 0 !important;
+  }
+  .transaction-main-info__block-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #41464a;
+    min-height: 23px;
+    span{
+      color: #41464a50;
+    }
+    .fiat-value{
+      padding: 3px 5px;
+      color: #41464a;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      background-color: #d8d8d840;
+    }
+    .block-link{
+      color: #41464a;
+      font-family: "Avenir Next Cyr Demi", sans-serif;
+      &:hover{
+        text-decoration: underline!important;
+      }
+    }
+    &:not(:last-child){
+      margin-bottom: 18px;
+    }
+  }
+  &:first-child{
+    padding-left: 0;
+  }
+  &:last-child{
+    padding-right: 0;
+  }
+  .setting-checkbox-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px solid #d8d8d840;
+    padding-top: 10px;
+    color: #41464a50;
+    .transaction-display-history__checkbox {
+      margin-left: auto;
+    }
+  }
+}
+
+.transaction-main-info__block-item-table {
+  width: 100%;
+  tr{
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+    min-height: 23px;
+    td{
+      text-align: right;
+    }
+    td:first-child{
+      text-align: left;
+      color: #41464a50;
+    }
+    .fiat-value{
+      padding: 3px 5px;
+      color: #41464a;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      background-color: #d8d8d840;
+    }
+  }
+  tr:not(:last-child){
+    td{
+     padding-bottom: 18px;
+    }
+  }
+  .fiat-from-crypto {
+    background-color: #d8d8d840;
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin-left: 5px;
+  }
+  .fiat-from-crypto-green{
+    background-color: #bfeeda;
+  }
+}
+.txs-count{
+  padding-right: 10px;
+}
+.transaction-status{
+  color: #41464a;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #fbe3a1;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 3px;
+  &.transaction-confirmed{
+    background-color: #b5ead4;
+  }
+}
+
+.script-wrap{
+  display: flex;
+  .col-6{
+    width: 50%;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 40px;
+    h2{
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      span{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        margin-left: 15px;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #d0d0d0;
+        border-radius: 5px;
+        font-weight: 900;
+        font-style: normal;
+        &.bottom:before{
+          content: '⬆';
+        }
+        &.top:before{
+          content: '⬇';
+        }
+        &:before{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    p{
+      margin-bottom: 20px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "name": "ENG",
+    "fullName": "English",
+    "img": "LanguageEN.png",
+    "value": "en",
+    "moment": "en-gb"
+  },
+  "ru": {
+    "name": "RU",
+    "fullName": "Russian",
+    "img": "LanguageRU.png",
+    "value": "ru",
+    "moment": "ru"
+  }
+}

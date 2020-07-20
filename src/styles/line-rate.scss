@@ -1,0 +1,47 @@
+.line-rate {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-info {
+  display: flex;
+  align-items: center;
+  color: #41464a;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.left-info-currancy-rate{
+  margin-left: auto;
+}
+
+.left-info-currancy-procent-wrapper{
+  width: 60px;
+  margin-left: 5px;
+  display: flex;
+}
+
+.left-info-currancy-procent{
+  border-radius: 2px;
+  padding: 5px;
+  margin-left: auto;
+  &.active{
+    background-color: #09b66d40;
+  }
+}
+.left-info-icons > svg{
+  height: auto;
+  width: 12px;
+  fill: #41464a;
+  margin-right: 17px;
+
+  &.xmr-icon,
+  &.dash-icon{
+    width: 17px;
+    margin-right: 12px;
+  }
+}
